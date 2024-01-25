@@ -1,6 +1,7 @@
 # build host
 build:
   cargo build -p host -r -F metal
+  # cargo build -p host -r -F cuda
   cargo build -p host -r --target-dir cpu
 
 # dry run zkvm without proving
