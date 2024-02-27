@@ -10,6 +10,10 @@ just build
 just bench
 ```
 
+## Poc Explain
+
+* <https://akagi201.notion.site/ZK-Orderbook-Dex-0567b96c3e864271b7c3f17072ff14a5?pvs=4>
+
 ## Benchmarks
 
 My macOS hardware info:
