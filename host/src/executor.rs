@@ -17,6 +17,7 @@ pub fn run_guest(dry_run: bool, input: Vec<String>, result: Vec<String>) {
         } else {
             println!("Dry run match result failed");
         }
+        println!("Proof verification skipped!");
     } else {
         let prover = default_prover();
         let receipt = prover.prove_elf(env, MATCH_ORDER_ELF).unwrap();
@@ -33,6 +34,6 @@ pub fn run_guest(dry_run: bool, input: Vec<String>, result: Vec<String>) {
         receipt.verify(MATCH_ORDER_ID).expect(
             "Code you have proven should successfully verify; did you specify the correct image ID?",
         );
-        println!("Proof verified successfully");
+        println!("Proof verified successfully!");
     }
 }
