@@ -1,0 +1,20 @@
+[package]
+name = "asset_manager"
+version = "0.1.0"
+edition = "2023_11"
+cairo-version = "2.5.4"
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[dependencies]
+core = "2.5.4"
+starknet = "2.5.4"
+
+[[target.starknet-contract]]
+allowed-libfuncs = true
+allowed-libfuncs-list.name = "experimental"
+sierra = true
+casm = false
+
+[tool.fmt]
+sort-module-level-items = true
